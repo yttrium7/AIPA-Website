@@ -1,0 +1,57 @@
+@media (max-width: 1023px) {
+  [data-name="3-ABOUT US"] {
+    width: 100% !important; height: auto !important; margin-top: 0 !important; padding-top: 60px;
+    --about-shadow: 4px 4px 8px 2px rgba(0,0,0,.25);
+    & [data-name="banner-aboutUs"] { display: block; position: relative; inset: auto; height: 340px; }
+    & [data-name="about-banner-pic"], & [data-name="home-banner-cover"] { width: 100%; height: 100%; }
+    & [data-name="banner-title"] { display: flex; position: relative; inset: auto; height: 100%; flex-direction: column; justify-content: center; align-items: center; gap: 24px; }
+    & [data-name="banner-title"] > * { position: static; translate: none; width: auto; max-width: calc(100% - 40px); }
+    & [data-name="banner-title"] > p { font-size: 40px; }
+    & [data-name^="aboutUs-section"] { display: block; position: relative; inset: auto; width: 100%; margin: 64px auto; padding: 0 24px; }
+    & [data-name="aboutUs-section1"] { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    & [data-name="company-profile"] { display: block; position: static; grid-column: 1 / -1; }
+    & [data-name="company-profile"] > *, & [data-name="text-tile"] > *, & [data-name="p1"] > *, & [data-name="p2"] > * { position: static; inset: auto; width: auto; height: auto; white-space: normal; }
+    & [data-name="company-profile"] > [data-name="text-bg"], & [data-name="text-tile"] > [data-name="text-bg"], & [data-node-id="95:3185"] { display: none; }
+    & [data-name="company-profile"] > p, & [data-name="text-tile"] > p { margin-bottom: 28px; font-size: 22px; }
+    & [data-name="company-profile"] > div:not([data-name="text-bg"]), & [data-name="text-tile"] p, & [data-name="p1"] p, & [data-name="p2"] p { font-size: 14px; line-height: 1.65; }
+    & [data-name="about-us-pic-01"], & [data-name="about-us-pic-02"] { position: relative; inset: auto; width: 100%; height: 260px; }
+    & [data-name="aboutUs-section2"] { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; }
+    & [data-name="aboutUs-section2"] > p { position: static; grid-column: 1 / -1; text-align: center; white-space: normal; font-size: 26px; margin-bottom: 12px; }
+    & [data-name^="commitment-card"] { display: grid; position: relative; inset: auto; grid-template-columns: 1fr 40px; padding: 20px; min-height: 290px; gap: 32px; background: white; box-shadow: var(--about-shadow); }
+    & [data-name="commitment-card-02"], & [data-name="commitment-card-04"] { background: linear-gradient(214.53deg,#0f2473,#10fcf2); }
+    & [data-name^="commitment-card"] > * { position: static; inset: auto; width: auto; }
+    & [data-name^="commitment-card"] > [data-name="text-bg"] { display: none; }
+    & [data-name^="commitment-card"] > [data-name^="icon-"] { width: 40px; height: 40px; position: relative; }
+    & [data-name="card-text"] { grid-column: 1 / -1; font-size: 14px; align-self: end; }
+    & [data-name="card-text"] span { line-height: 1.5; }
+    & [data-name="aboutUs-section3"], & [data-name="aboutUs-section4"] { display: flex; flex-direction: column; gap: 24px; }
+    & [data-name="aboutUs-section3"] > [data-name="BG"], & [data-name="aboutUs-section4"] > [data-name="BG"] { position: relative; inset: auto; translate: none; width: 100%; height: 280px; }
+    & [data-name="text-tile"] { display: flex; position: static; flex-direction: column; padding: 32px; background: white; box-shadow: var(--about-shadow); }
+    & [data-name="p1"], & [data-name="p2"] { display: block; position: static; padding-left: 18px; border-left: 4px solid #10b7cc; margin: 12px 0; }
+    & [data-name="p1"] > div:first-child, & [data-name="p2"] > div:first-child { display: none; }
+    & [data-name="p1"] { order: 1; } & [data-name="p2"] { order: 2; }
+    & [data-name="footer"] { position: relative; inset: auto; width: 100%; height: auto; padding: 40px 24px 24px; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 32px 20px; color: white; }
+    & [data-name="footer"] > [data-name="aipa-logo"] { position: relative; inset: auto; width: 213px; height: 73px; grid-column: 1 / -1; order: -2; }
+    & [data-name^="footer-link-col"] { position: relative; display: block; inset: auto; }
+    & [data-name="footer-link-col-1"] { grid-column: 1 / -1; order: -1; }
+    & [data-name^="footer-link-col"] > *, & [data-name="footer-links"] p { position: static; inset: auto; width: auto; white-space: normal; }
+    & [data-name="footer-links"] { display: flex; flex-direction: column; gap: 14px; margin-top: 20px; font-size: 12px; }
+    & [data-name="footer-link-col-1"] > p { margin: 18px 0; }
+    & [data-name="footer"] [data-name="main-btn"] { width: 154px; height: 52px; }
+    & [data-name="social-media-icons"] { display: flex; gap: 24px; margin-top: 24px; }
+    & [data-name="social-media-icons"] > * { position: relative; inset: auto; width: 28px; height: 28px; }
+    & [data-name="footer"] > p { position: relative; inset: auto; grid-column: 1 / -1; text-align: center; font-size: 10px; }
+    & [data-name="footer-pic"] { inset: 0; height: 100%; }
+  }
+}
+@media (max-width: 599px) {
+  [data-name="3-ABOUT US"] {
+    & [data-name="aboutUs-section1"], & [data-name="aboutUs-section2"] { grid-template-columns: 1fr; }
+    & [data-name="aboutUs-section2"] > p { font-size: 23px; }
+    & [data-name="about-us-pic-01"] { height: 160px; }
+    & [data-name="about-us-pic-02"] { height: auto; aspect-ratio: 1; }
+    & [data-name="text-tile"] { padding: 24px; }
+    & [data-name="footer"] { grid-template-columns: 1fr 1fr; }
+    & [data-name="footer-link-col-4"] { grid-column: 1 / -1; }
+  }
+}

@@ -1,0 +1,9 @@
+.car-brand-grid{position:absolute;left:763px;top:2374px;width:473px;display:grid;grid-template-columns:repeat(6,68px);gap:26px 13px;z-index:2}
+.car-brand-tile{position:relative;width:68px;height:68px;display:grid;place-items:center;background:rgba(255,255,255,.2);box-shadow:4px 4px 8px rgba(0,0,0,.25);outline:none;transition:transform .2s ease,background-color .2s ease}
+.car-brand-tile img{width:76%;height:76%;object-fit:contain}
+.car-brand-tile span{position:absolute;left:50%;bottom:-24px;translate:-50% 4px;padding:4px 8px;border-radius:4px;background:#00082d;color:#fff;font:10px/1.2 "Inter:Medium",sans-serif;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .18s ease,translate .18s ease;z-index:3}
+.car-brand-tile:hover,.car-brand-tile:focus-visible{background:rgba(255,255,255,.34);transform:translateY(-2px)}
+.car-brand-tile:hover span,.car-brand-tile:focus-visible span{opacity:1;translate:-50% 0}
+.car-brand-grid.is-mobile{position:static;width:100%;grid-template-columns:repeat(3,minmax(0,68px));justify-content:center;gap:34px 18px;margin-top:32px}
+.car-brand-grid.is-mobile .car-brand-tile{width:68px;height:68px}
+.car-brand-grid.is-mobile .car-brand-tile span{font-size:9px;bottom:-22px}

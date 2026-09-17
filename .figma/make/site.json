@@ -1,0 +1,12 @@
+{
+  "title": "AIPA | Premium Automotive Parts",
+  "description": "AIPA supplies precision-engineered automotive aftermarket parts, professional support, and reliable application data for global partners.",
+  "language": "en",
+  "robots": {
+    "index": true
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

@@ -1,0 +1,241 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: "Inter:Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+}
+@font-face {
+  font-family: "Inter:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+}
+@font-face {
+  font-family: "Inter:Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+}
+@font-face {
+  font-family: "Inter:Black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+}
+/* Futura:Medium unavailable (reason: not_found) — fallback: Trebuchet MS */
+@font-face {
+  font-family: "Futura:Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Trebuchet MS");
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+/* ── Mobile: prevent horizontal overflow ─────────────────────── */
+@media (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+}
+
+/* ── Interactive nav ──────────────────────────────────────────── */
+
+.inav-item {
+  transition: color 0.15s ease;
+}
+.inav-item:hover {
+  color: #10fcf2 !important;
+}
+.inav-dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.inav-contact-btn:hover {
+  opacity: 0.88;
+  transform: scale(1.025);
+}
+
+/* ── Gradient "CONTACT US" buttons (main-btn) ────────────────── */
+
+[data-name="main-btn"] {
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+[data-name="main-btn"]:hover {
+  opacity: 0.88;
+  transform: scale(1.025);
+}
+
+/* ── VIEW MORE buttons ───────────────────────────────────────── */
+
+[data-name="secondary-btn"],
+[data-name="secondary-btn-divert"] {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+[data-name="secondary-btn"]:hover,
+[data-name="secondary-btn-divert"]:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ── Product / info cards ────────────────────────────────────── */
+
+[data-name="card-BG"] {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+[data-name="card-BG"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ── Footer links ────────────────────────────────────────────── */
+
+[data-name^="footer-link-col"] p {
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+[data-name^="footer-link-col"] p:hover {
+  opacity: 0.65;
+}
+
+/* ── Social media icons ──────────────────────────────────────── */
+
+[data-name="typcn:social-youtube"],
+[data-name="typcn:social-instagram"],
+[data-name="foundation:social-facebook"],
+[data-name="mingcute:social-x-fill"] {
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+[data-name="typcn:social-youtube"]:hover,
+[data-name="typcn:social-instagram"]:hover,
+[data-name="foundation:social-facebook"]:hover,
+[data-name="mingcute:social-x-fill"]:hover {
+  opacity: 0.65;
+  transform: scale(1.2);
+}
+
+/* ── Car brand icons (Vehicles section) ─────────────────────── */
+
+[data-name="Profile pic"] {
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+[data-name="Profile pic"]:hover {
+  transform: scale(1.07);
+  opacity: 0.8;
+}
+
+/* Hide first and last columns (col-1, col-8) from car-icons grid */
+[data-name="car-icons"] > [class~="col-1"],
+[data-name="car-icons"] > [class~="col-8"] {
+  visibility: hidden !important;
+}
+
+/* ── Section 4 title font size ────────────────────────────────── */
+
+[data-name="home-section-4"] [data-name="section-title-center"] p:last-child {
+  font-size: 28px !important;
+}
+
+/* ── Application scenario frames (section 4) ─────────────────── */
+
+[data-name="home-section-4"] [class*="overflow-clip"] {
+  cursor: pointer;
+}
+
+/* ── What We Offer cards (section 3) — entire card hover ──────── */
+/* Identified by card-BG having bg-white class */
+
+[data-name^="card-0"]:has([class*="bg-white"]) [data-name="card-BG"],
+[data-name^="card-0"]:has([class*="bg-white"]) [data-name="card-pic"],
+[data-name^="card-0"]:has([class*="bg-white"]) [data-name="text"] {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  cursor: pointer;
+}
+[data-name^="card-0"]:has([class*="bg-white"]):has(:hover) [data-name="card-BG"] {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2) !important;
+}
+[data-name^="card-0"]:has([class*="bg-white"]):has(:hover) [data-name="card-pic"],
+[data-name^="card-0"]:has([class*="bg-white"]):has(:hover) [data-name="text"] {
+  transform: translateY(-6px);
+}
+
+/* ── Product grid cards (section 5) — gray default, blue hover ─── */
+
+/* Reset ALL product card-BGs to gray-white default.
+   Card3 (Sensors) is hardcoded blue inline — this overrides it. */
+[data-name="card-BG"]:not([class*="bg-white"]) {
+  background-image: linear-gradient(191.86deg, rgb(255,255,255) 0%, rgb(229,229,229) 98.45%) !important;
+}
+
+/* Blue gradient overlay fades in on hover via ::after */
+[data-name="card-BG"]:not([class*="bg-white"])::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: linear-gradient(191.86deg, rgb(15,36,115) 0%, rgb(16,252,242) 100%);
+  opacity: 0;
+  transition: opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+[data-name^="card-0"]:not(:has([class*="bg-white"])) [data-name="card-BG"],
+[data-name^="card-0"]:not(:has([class*="bg-white"])) [data-name="card-content"] > * {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Default: dark text/icons on all product cards (overrides Sensors white text) */
+[data-name^="card-0"]:not(:has([class*="bg-white"])) [data-name="category-name"] p {
+  color: #00082d !important;
+  transition: color 0.38s ease;
+}
+[data-name^="card-0"]:not(:has([class*="bg-white"])) [data-name="category-name"] path {
+  fill: #00082d !important;
+  transition: fill 0.38s ease;
+}
+
+/* Hover: reveal blue overlay, lift card, blue glow, white text/icons */
+[data-name^="card-0"]:not(:has([class*="bg-white"])):has(:hover) [data-name="card-BG"]::after {
+  opacity: 1;
+}
+[data-name^="card-0"]:not(:has([class*="bg-white"])):has(:hover) [data-name="card-BG"] {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 14px 32px rgba(15, 36, 115, 0.35) !important;
+}
+[data-name^="card-0"]:not(:has([class*="bg-white"])):has(:hover) [data-name="card-content"] > * {
+  transform: translateY(-5px);
+}
+[data-name^="card-0"]:not(:has([class*="bg-white"])):has(:hover) [data-name="category-name"] p {
+  color: white !important;
+}
+[data-name^="card-0"]:not(:has([class*="bg-white"])):has(:hover) [data-name="category-name"] path {
+  fill: white !important;
+}
+
+/* ── Imported nav items (fallthrough for original nav) ─────── */
+
+[data-name="navigation-menu"] > div,
+[data-name="navigation-menu"] > p {
+  cursor: pointer;
+}
+
+/* ── Footer aipa logo ────────────────────────────────────────── */
+
+[data-name="footer"] [data-name="aipa-logo"] {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+[data-name="footer"] [data-name="aipa-logo"]:hover {
+  opacity: 0.8;
+}

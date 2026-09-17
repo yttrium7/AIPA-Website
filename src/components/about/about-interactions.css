@@ -1,0 +1,9 @@
+/* About-only feedback; preserve generated absolute positioning and Home styles. */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  [data-name="3-ABOUT US"] [data-name^="commitment-card"] > * {
+    transition: translate 220ms ease;
+  }
+  [data-name="3-ABOUT US"] [data-name^="commitment-card"]:has(> :hover) > * {
+    translate: 0 -4px;
+  }
+}

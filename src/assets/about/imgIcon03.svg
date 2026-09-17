@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="38.82" height="38.82" viewBox="0 0 38.82 38.82" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-03">
+<rect id="icon-bg" width="38.82" height="38.82" rx="6" fill="url(#paint0_linear_0_118)"/>
+<path id="commitment-icon" d="M28.1557 6.89453H10.7698L4.56055 13.0836L18.7038 30.2756L19.3248 31.926L19.7387 30.8257L34.365 13.1524L28.1557 6.89453ZM19.3248 27.181L14.3574 14.1839H24.3612L19.3248 27.181ZM13.6675 12.4647L12.2186 8.68249H26.4309L24.9821 12.4647H13.6675ZM11.8047 12.4647H7.66517L10.7008 9.43894L11.8047 12.4647ZM28.0177 9.23264L31.1913 12.396H26.7759L28.0177 9.23264ZM7.59618 14.1839H12.4946L16.7721 25.2555L7.59618 14.1839ZM26.155 14.1839H31.2603L21.6705 25.8057L26.155 14.1839Z" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_118" x1="39.5132" y1="1.23914e-05" x2="-2.84095" y2="3.39684" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5361FB"/>
+<stop offset="1" stop-color="#17CAF5"/>
+</linearGradient>
+</defs>
+</svg>

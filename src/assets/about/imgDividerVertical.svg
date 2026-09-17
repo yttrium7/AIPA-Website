@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="105" height="10" viewBox="0 0 105 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="divider-vertical">
+<rect id="Rectangle 27" width="43.12" height="10" fill="url(#paint0_linear_0_96)"/>
+<line id="Line 1" x1="4.37114e-07" y1="9.5" x2="105" y2="9.5" stroke="#00082D"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_96" x1="0" y1="0" x2="21.3904" y2="27.1315" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0F2473"/>
+<stop offset="1" stop-color="#10FCF2"/>
+</linearGradient>
+</defs>
+</svg>

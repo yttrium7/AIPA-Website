@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="432" height="225" viewBox="0 0 432 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="line-divider">
+<line id="Line 2" y1="0.5" x2="432" y2="0.5" stroke="white" stroke-opacity="0.25"/>
+<line id="Line 3" y1="44.5" x2="432" y2="44.5" stroke="white" stroke-opacity="0.25"/>
+<line id="Line 4" y1="88.5" x2="432" y2="88.5" stroke="white" stroke-opacity="0.25"/>
+<line id="Line 5" y1="132.5" x2="432" y2="132.5" stroke="white" stroke-opacity="0.25"/>
+<line id="Line 6" y1="176.5" x2="432" y2="176.5" stroke="white" stroke-opacity="0.25"/>
+<line id="Line 7" y1="224.5" x2="432" y2="224.5" stroke="white" stroke-opacity="0.25"/>
+</g>
+</svg>
