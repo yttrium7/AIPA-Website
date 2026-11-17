@@ -1,25 +1,25 @@
 import svgPaths from "./svg-vdx3ul2yyf";
-import imgFooterPic from "./70e04261d650597c50a1fa5ef9a4105343f2538c.png";
-import imgBg from "./22c8bdd30b0431d3df0e193c1aee20ee879a1c02.png";
-import imgPicSensor from "./ad8494cf76cd5c891a24e2e56320a8201740fb81.png";
-import imgPicBrakes from "./761918e9042eb4dea7308c86b7d77daa3ec7ebbb.png";
-import imgPicCooling from "./5a2cd4e36e177d548300969ca95b85cff7010865.png";
-import imgPicIgnition from "./293e63dc2d1a405d9d91136735d265475ad0452d.png";
-import imgPicElectrics from "./d7d7a9e33860ea9922f468299546365385e49781.png";
-import imgPicAcSystem from "./dbac8ef06c7918e369dee98996107915e192aa6d.png";
-import imgPicExhaust from "./ff64ce05504b032bc98be805cdac18383d6f5833.png";
-import imgPicChasis from "./73ab2043fdb198e1d5b96c6bb592cb345236a971.png";
-import imgPicEngine from "./583dc5cdacb1f11b3c99dcf915b21eeb08ee1ed6.png";
-import imgRectangle97 from "./4b0017ac28cd0024ccef83c058a74fe526aa8393.png";
-import imgRectangle98 from "./212ead606655187cecea3a2cf373be162fde873e.png";
-import imgRectangle99 from "./30922abcad1b477d90966300592fd8bb57a59f08.png";
-import imgRectangle100 from "./05ed871b5e2f64321b66a52c8677f16277278c37.png";
-import imgCardPic from "./782c8092b45a955bc824aada4794e3f1220d184e.png";
-import imgCardPic1 from "./b332fd1363383966ca0ffb94fd5cc1d3012afd70.png";
-import imgCardPic2 from "./7816dd59f9927d5b774c3da06af10bec297beb8e.png";
-import imgSectionPic from "./16029ab3e501fe0fc0f0098bb4aeb35d46dc4f9e.png";
-import imgSectionPic1 from "./767937fd687ef41580ee1088bac6fecb29cb9c24.png";
-import imgHomeBanner1 from "./abecc2d8edb47629e06299f0921d83d65bcf80df.png";
+import imgFooterPic from "./70e04261d650597c50a1fa5ef9a4105343f2538c.webp";
+import imgBg from "./22c8bdd30b0431d3df0e193c1aee20ee879a1c02.webp";
+import imgPicSensor from "./ad8494cf76cd5c891a24e2e56320a8201740fb81.webp";
+import imgPicBrakes from "./761918e9042eb4dea7308c86b7d77daa3ec7ebbb.webp";
+import imgPicCooling from "./5a2cd4e36e177d548300969ca95b85cff7010865.webp";
+import imgPicIgnition from "./293e63dc2d1a405d9d91136735d265475ad0452d.webp";
+import imgPicElectrics from "./d7d7a9e33860ea9922f468299546365385e49781.webp";
+import imgPicAcSystem from "./dbac8ef06c7918e369dee98996107915e192aa6d.webp";
+import imgPicExhaust from "./ff64ce05504b032bc98be805cdac18383d6f5833.webp";
+import imgPicChasis from "./73ab2043fdb198e1d5b96c6bb592cb345236a971.webp";
+import imgPicEngine from "./583dc5cdacb1f11b3c99dcf915b21eeb08ee1ed6.webp";
+import imgRectangle97 from "./4b0017ac28cd0024ccef83c058a74fe526aa8393.webp";
+import imgRectangle98 from "./212ead606655187cecea3a2cf373be162fde873e.webp";
+import imgRectangle99 from "./30922abcad1b477d90966300592fd8bb57a59f08.webp";
+import imgRectangle100 from "./05ed871b5e2f64321b66a52c8677f16277278c37.webp";
+import imgCardPic from "./782c8092b45a955bc824aada4794e3f1220d184e.webp";
+import imgCardPic1 from "./b332fd1363383966ca0ffb94fd5cc1d3012afd70.webp";
+import imgCardPic2 from "./7816dd59f9927d5b774c3da06af10bec297beb8e.webp";
+import imgSectionPic from "./16029ab3e501fe0fc0f0098bb4aeb35d46dc4f9e.webp";
+import imgSectionPic1 from "./767937fd687ef41580ee1088bac6fecb29cb9c24.webp";
+import imgHomeBanner1 from "./abecc2d8edb47629e06299f0921d83d65bcf80df.webp";
 import CarBrandGrid from "@/components/CarBrandGrid";
 
 export function Footer({ className }: { className?: string }) {
@@ -28,7 +28,7 @@ export function Footer({ className }: { className?: string }) {
       <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(128.37027442359062deg, rgb(15, 36, 115) 0%, rgb(16, 252, 242) 100%)" }} data-name="footer-BG" />
       <div className="absolute aspect-[1440/454] left-0 mix-blend-multiply opacity-15 right-0 top-[81px]" data-name="footer-pic">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[166.08%] left-[-2.26%] max-w-none top-[-61.01%] w-[104.72%]" src={imgFooterPic} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[166.08%] left-[-2.26%] max-w-none top-[-61.01%] w-[104.72%]" src={imgFooterPic} />
         </div>
       </div>
       <div className="[word-break:break-word] absolute contents inset-[43.55%_18.61%_31.21%_70.28%] leading-[normal] not-italic text-white" data-name="footer-link-col-4">
@@ -322,7 +322,7 @@ function SectionIntro() {
     <div className="absolute contents left-[248px] top-[4770px]" data-name="section-intro">
       <div className="absolute h-[186px] left-[248px] rounded-bl-[10px] rounded-br-[10px] rounded-tl-[10px] rounded-tr-[60px] shadow-[4px_4px_8px_2px_rgba(0,0,0,0.25)] top-[4770px] w-[946px]" data-name="bg">
         <div aria-hidden className="absolute inset-0 pointer-events-none rounded-bl-[10px] rounded-br-[10px] rounded-tl-[10px] rounded-tr-[60px]">
-          <img alt="" className="absolute max-w-none object-cover rounded-bl-[10px] rounded-br-[10px] rounded-tl-[10px] rounded-tr-[60px] size-full" src={imgBg} />
+          <img loading="lazy" decoding="async" alt="" className="absolute max-w-none object-cover rounded-bl-[10px] rounded-br-[10px] rounded-tl-[10px] rounded-tr-[60px] size-full" src={imgBg} />
           <div className="absolute inset-0 rounded-bl-[10px] rounded-br-[10px] rounded-tl-[10px] rounded-tr-[60px]" style={{ backgroundImage: "linear-gradient(68.70546997854377deg, rgba(255, 255, 255, 0.8) 0%, rgba(229, 229, 229, 0.8) 100%)" }} />
         </div>
       </div>
@@ -364,7 +364,7 @@ function CardContent() {
     <div className="absolute contents left-[289px] top-[5034px]" data-name="card-content">
       <div className="absolute h-[110px] left-[393px] top-[5034px] w-[230px]" data-name="pic:sensor">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[221.99%] left-[-12.57%] max-w-none top-[-56.54%] w-[123.98%]" src={imgPicSensor} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[221.99%] left-[-12.57%] max-w-none top-[-56.54%] w-[123.98%]" src={imgPicSensor} />
         </div>
       </div>
       <CategoryName />
@@ -399,7 +399,7 @@ function CardContent1() {
     <div className="absolute contents left-[284px] top-[5472px]" data-name="card-content">
       <CategoryName1 />
       <div className="absolute h-[110px] left-[414px] mix-blend-multiply top-[5472px] w-[230px]" data-name="pic:brakes">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPicBrakes} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPicBrakes} />
       </div>
     </div>
   );
@@ -450,7 +450,7 @@ function CardContent2() {
       <CategoryName2 />
       <div className="absolute h-[130px] left-[778px] mix-blend-multiply top-[5024px] w-[150px]" data-name="pic:cooling">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[124.6%] left-0 max-w-none top-[-12.3%] w-full" src={imgPicCooling} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[124.6%] left-0 max-w-none top-[-12.3%] w-full" src={imgPicCooling} />
         </div>
       </div>
     </div>
@@ -494,7 +494,7 @@ function CardContent3() {
     <div className="absolute contents left-[1014px] top-[5021px]" data-name="card-content">
       <CategoryName3 />
       <div className="absolute h-[130px] left-[1014px] mix-blend-multiply top-[5247px] w-[150px]" data-name="pic:ignition">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPicIgnition} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPicIgnition} />
       </div>
     </div>
   );
@@ -533,7 +533,7 @@ function CardContent4() {
     <div className="absolute contents left-[269px] top-[5237px]" data-name="card-content">
       <CategoryName4 />
       <div className="absolute h-[100px] left-[269px] mix-blend-multiply top-[5281.58px] w-[170px]" data-name="pic:electrics">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPicElectrics} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPicElectrics} />
       </div>
     </div>
   );
@@ -567,7 +567,7 @@ function CardContent5() {
       <CategoryName5 />
       <div className="absolute h-[100px] left-[518px] mix-blend-multiply top-[5282px] w-[170px]" data-name="pic:ac-system">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[155.56%] left-0 max-w-none top-[-34.62%] w-full" src={imgPicAcSystem} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[155.56%] left-0 max-w-none top-[-34.62%] w-full" src={imgPicAcSystem} />
         </div>
       </div>
     </div>
@@ -602,7 +602,7 @@ function CardContent6() {
       <CategoryName6 />
       <div className="absolute h-[100px] left-[768px] mix-blend-multiply top-[5282px] w-[170px]" data-name="pic:exhaust">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[155.56%] left-0 max-w-none top-[-34.62%] w-full" src={imgPicExhaust} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[155.56%] left-0 max-w-none top-[-34.62%] w-full" src={imgPicExhaust} />
         </div>
       </div>
     </div>
@@ -642,7 +642,7 @@ function CardContent7() {
     <div className="absolute contents left-[752px] top-[5457px]" data-name="card-content">
       <CategoryName7 />
       <div className="absolute h-[100px] left-[752px] mix-blend-multiply top-[5497.36px] w-[170px]" data-name="pic:chasis">
-        <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgPicChasis} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgPicChasis} />
       </div>
     </div>
   );
@@ -675,7 +675,7 @@ function CardContent8() {
     <div className="absolute contents left-[1004px] top-[5457px]" data-name="card-content">
       <CategoryName8 />
       <div className="absolute h-[100px] left-[1004px] mix-blend-multiply top-[5497.43px] w-[170px]" data-name="pic:engine">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPicEngine} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPicEngine} />
       </div>
     </div>
   );
@@ -768,7 +768,7 @@ function Frame() {
       <div className="-translate-x-1/2 absolute h-[349px] left-1/2 rounded-[22px] top-0 w-[263px]">
         <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[22px]">
           <div className="absolute inset-0 rounded-[22px]" style={{ backgroundImage: "linear-gradient(211.74899612619612deg, rgb(15, 36, 115) 0%, rgb(16, 252, 242) 100%)" }} />
-          <img alt="" className="absolute max-w-none object-cover opacity-43 rounded-[22px] size-full" src={imgRectangle97} />
+          <img loading="lazy" decoding="async" alt="" className="absolute max-w-none object-cover opacity-43 rounded-[22px] size-full" src={imgRectangle97} />
         </div>
       </div>
       <Frame1 />
@@ -804,7 +804,7 @@ function Frame2() {
       <div className="-translate-x-1/2 absolute h-[349px] left-1/2 rounded-[22px] top-0 w-[263px]">
         <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[22px]">
           <div className="absolute inset-0 rounded-[22px]" style={{ backgroundImage: "linear-gradient(211.74899612619612deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%)" }} />
-          <img alt="" className="absolute max-w-none object-cover opacity-43 rounded-[22px] size-full" src={imgRectangle98} />
+          <img loading="lazy" decoding="async" alt="" className="absolute max-w-none object-cover opacity-43 rounded-[22px] size-full" src={imgRectangle98} />
         </div>
       </div>
       <Frame3 />
@@ -857,7 +857,7 @@ function Frame4() {
       <div className="-translate-x-1/2 absolute h-[349px] left-1/2 rounded-[22px] top-0 w-[263px]">
         <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[22px]">
           <div className="absolute inset-0 rounded-[22px]" style={{ backgroundImage: "linear-gradient(211.74899612619612deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%)" }} />
-          <img alt="" className="absolute max-w-none object-cover opacity-43 rounded-[22px] size-full" src={imgRectangle99} />
+          <img loading="lazy" decoding="async" alt="" className="absolute max-w-none object-cover opacity-43 rounded-[22px] size-full" src={imgRectangle99} />
         </div>
       </div>
       <Frame5 />
@@ -907,7 +907,7 @@ function Frame6() {
       <div className="-translate-x-1/2 absolute h-[349px] left-1/2 rounded-[22px] top-0 w-[263px]">
         <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[22px]">
           <div className="absolute inset-0 rounded-[22px]" style={{ backgroundImage: "linear-gradient(211.74899612619612deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%)" }} />
-          <img alt="" className="absolute max-w-none object-cover opacity-43 rounded-[22px] size-full" src={imgRectangle100} />
+          <img loading="lazy" decoding="async" alt="" className="absolute max-w-none object-cover opacity-43 rounded-[22px] size-full" src={imgRectangle100} />
         </div>
       </div>
       <Frame7 />
@@ -948,7 +948,7 @@ function Card() {
     <a href="/services" className="absolute contents left-[184px] top-[3110px]" data-name="card-01">
       <div className="absolute bg-white h-[396px] left-[184px] shadow-[4px_4px_8px_2px_rgba(0,0,0,0.25)] top-[3110px] w-[327px]" data-name="card-BG" />
       <div className="absolute h-[246px] left-[184px] top-[3110px] w-[327px]" data-name="card-pic">
-        <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgCardPic} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgCardPic} />
       </div>
       <Text />
     </a>
@@ -969,7 +969,7 @@ function Card1() {
     <a href="/services" className="absolute contents left-[557px] top-[3110px]" data-name="card-02">
       <div className="absolute bg-white h-[396px] left-[557px] shadow-[4px_4px_8px_2px_rgba(0,0,0,0.25)] top-[3110px] w-[327px]" data-name="card-BG" />
       <div className="absolute h-[246px] left-[557px] top-[3110px] w-[327px]" data-name="card-pic">
-        <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgCardPic1} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgCardPic1} />
       </div>
       <Text1 />
     </a>
@@ -990,7 +990,7 @@ function Card2() {
     <a href="/services" className="absolute contents left-[930px] top-[3110px]" data-name="card-03">
       <div className="absolute bg-white h-[396px] left-[930px] shadow-[4px_4px_8px_2px_rgba(0,0,0,0.25)] top-[3110px] w-[327px]" data-name="card-BG" />
       <div className="absolute h-[246px] left-[930px] top-[3110px] w-[327px]" data-name="card-pic">
-        <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgCardPic2} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgCardPic2} />
       </div>
       <Text2 />
     </a>
@@ -1585,7 +1585,7 @@ function HomeSection1() {
   return (
     <div className="absolute contents left-px top-[2233px]" data-name="home-section-2">
       <div className="absolute h-[614px] left-[251px] mix-blend-luminosity top-[2233px] w-[1396.85px]" data-name="section-pic">
-        <img alt="" className="absolute inset-0 max-w-none object-cover opacity-60 pointer-events-none size-full" src={imgSectionPic} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover opacity-60 pointer-events-none size-full" src={imgSectionPic} />
       </div>
       <SectionTitle1 />
       <CarIconContent />
@@ -1620,7 +1620,7 @@ function HomeSection() {
     <div className="absolute contents left-px top-[1404px]" data-name="home-section-1">
       <div className="absolute h-[554px] left-px shadow-[4px_4px_8px_2px_rgba(0,0,0,0.25)] top-[1404px] w-[519px]" data-name="section-pic">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[114.59%] left-[-117.53%] max-w-none top-[-7.3%] w-[217.53%]" src={imgSectionPic1} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[114.59%] left-[-117.53%] max-w-none top-[-7.3%] w-[217.53%]" src={imgSectionPic1} />
         </div>
       </div>
       <SectionContent3 />
@@ -1771,7 +1771,7 @@ function HomeBanner({ overlay }: { overlay?: React.ReactNode }) {
     <div className="absolute contents left-0 top-0" data-name="home-banner">
       <div className="absolute h-[780px] left-0 top-0 w-[1440px]" data-name="home-banner-1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-full left-[-25.42%] max-w-none top-0 w-[125.42%]" src={imgHomeBanner1} />
+          <img loading="eager" fetchPriority="high" alt="" className="absolute h-full left-[-25.42%] max-w-none top-0 w-[125.42%]" src={imgHomeBanner1} />
         </div>
       </div>
       <div className="absolute h-[780px] left-0 mix-blend-soft-light top-0 w-[1440px]" style={{ backgroundImage: "linear-gradient(118.50445818654913deg, rgb(15, 36, 115) 0%, rgb(16, 252, 242) 100%)" }} data-name="home-banner-cover" />

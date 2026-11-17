@@ -13,21 +13,21 @@ export const sensorCategory = {
   name: "Sensors",
   description: "The nervous system of modern vehicles. Our sensors feature gold-plated contacts and hermetic sealing to ensure precise signal accuracy (±1% tolerance) and long-term durability in extreme environments (-40°C to +125°C).",
   items: [
-    { name: "ABS Sensor", image: "imgRectangle111.png", x: 0, y: 0, width: 200, corner: "tr" },
-    { name: "Oxygen Sensor", image: "imgRectangle112.png", x: 232, y: 0, width: 200, corner: "br" },
-    { name: "Mass Air Flow", image: "imgRectangle113.png", x: 464, y: 0, width: 300, corner: "tl" },
-    { name: "Crankshaft Position Sensor", image: "imgRectangle119.png", x: 0, y: 225, width: 300, corner: "tr" },
-    { name: "Camshaft Position Sensor", image: "imgRectangle117.png", x: 332, y: 225, width: 200, corner: "br" },
-    { name: "Throttle Position Sensor", image: "imgRectangle118.png", x: 564, y: 225, width: 200, corner: "tl" },
-    { name: "Manifold Absolute Pressure", image: "imgRectangle114.png", x: 0, y: 450, width: 200, corner: "tr" },
-    { name: "Knock Sensor", image: "imgRectangle115.png", x: 232, y: 450, width: 200, corner: "br" },
-    { name: "Tire Pressure Monitoring Sensor", image: "imgRectangle116.png", x: 464, y: 450, width: 300, corner: "tl" },
+    { name: "ABS Sensor", image: "imgRectangle111.webp", x: 0, y: 0, width: 200, corner: "tr" },
+    { name: "Oxygen Sensor", image: "imgRectangle112.webp", x: 232, y: 0, width: 200, corner: "br" },
+    { name: "Mass Air Flow", image: "imgRectangle113.webp", x: 464, y: 0, width: 300, corner: "tl" },
+    { name: "Crankshaft Position Sensor", image: "imgRectangle119.webp", x: 0, y: 225, width: 300, corner: "tr" },
+    { name: "Camshaft Position Sensor", image: "imgRectangle117.webp", x: 332, y: 225, width: 200, corner: "br" },
+    { name: "Throttle Position Sensor", image: "imgRectangle118.webp", x: 564, y: 225, width: 200, corner: "tl" },
+    { name: "Manifold Absolute Pressure", image: "imgRectangle114.webp", x: 0, y: 450, width: 200, corner: "tr" },
+    { name: "Knock Sensor", image: "imgRectangle115.webp", x: 232, y: 450, width: 200, corner: "br" },
+    { name: "Tire Pressure Monitoring Sensor", image: "imgRectangle116.webp", x: 464, y: 450, width: 300, corner: "tl" },
   ],
 };
 
 export const electricsCategory = {
   name: "Electrics",
-  spriteImage: "electrics-products-v1.png",
+  spriteImage: "electrics-products-v1.webp",
   description: "Reliable electrical components keep every vehicle function powered, controlled, and connected. Our range is engineered for stable output, precise fitment, low electrical resistance, and dependable operation under heat, vibration, moisture, and demanding daily use.",
   items: [
     { name: "Alternator", sprite: [0,0], x: 0, y: 0, width: 200, corner: "tr" },

@@ -9,6 +9,28 @@ pnpm run check
 
 Upload the contents of `dist/` to the website root.
 
+## Image performance (2026-10-27)
+
+The optimized build is approximately 7 MB (previously 93 MB). Large raster
+images use WebP, with a maximum dimension of 2560 pixels and preserved alpha.
+Original PNG/JPEG sources remain in Git for future editing; asset globs exclude
+those originals so they are not shipped alongside WebP copies. Pages load on
+demand, below-fold images use native lazy loading, and the first home banner
+loads eagerly with high priority.
+
+Generated WebP files are committed, so ordinary builds need no image tools.
+To regenerate after changing source images, run `scripts/optimize-images.mjs`
+with Sharp available (`SHARP_MODULE` can specify its absolute module path).
+When adding an image to an asset-glob directory, exclude its original PNG/JPEG
+from the corresponding page glob after conversion.
+
+For the existing server, publish the updated source and `dist/` through GitHub
+Desktop, then run `git pull --ff-only` in `/var/www/aipa-website`.
+Verify `/`, `/about`, `/services`, `/contact`, and all product routes after deploy.
+Check that image requests now use `.webp` and return 200 in browser Network tools.
+Keep HTML on `Cache-Control: no-cache`; hashed assets may use long-lived cache.
+No PM2 restart or Nginx change is required for a static asset release.
+
 ## Nginx
 
 ```nginx

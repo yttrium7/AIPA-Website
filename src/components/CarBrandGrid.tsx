@@ -20,7 +20,7 @@ const brands = [
 export default function CarBrandGrid({ mobile = false }: { mobile?: boolean }) {
   return <div className={`car-brand-grid${mobile ? " is-mobile" : ""}`} aria-label="Supported vehicle brands">
     {brands.map(([name, icon]) => <div className="car-brand-tile" key={name} tabIndex={0} aria-label={name}>
-      <img src={icon} alt="" />
+      <img loading="lazy" decoding="async" src={icon} alt="" />
       <span role="tooltip">{name}</span>
     </div>)}
   </div>;

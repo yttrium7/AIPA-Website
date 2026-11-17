@@ -6,7 +6,7 @@ import { useViewport } from "@/hooks/useViewport";
 import { useNavigate } from "react-router";
 import "@/components/services.css";
 
-const assets = import.meta.glob("../assets/services/*", { eager: true, query: "?url", import: "default" }) as Record<string, string>;
+const assets = import.meta.glob(["../assets/services/*","!../assets/services/banner-web.png","!../assets/services/car.png","!../assets/services/catalogues-support.png","!../assets/services/process.png"], { eager: true, query: "?url", import: "default" }) as Record<string, string>;
 const asset = (name: string) => assets[`../assets/services/${name}`];
 const offers = [
   ["Focused Excellence", "Specialization in three core categories where precision and reliability are paramount"],
@@ -35,27 +35,27 @@ export default function ServicesPage() {
   return <>
 
     <main ref={root} className="services-page" data-node-id="95:3597">
-      <section className="service-banner"><img src={asset("banner-web.png")} alt="" /><div className="service-banner-cover" /><h1>Service &amp; Support</h1><p>Uncompromising Standards.<br />Rigorous Validation. Premium Performance.</p></section>
+      <section className="service-banner"><img loading="lazy" decoding="async" src={asset("banner-web.webp")} alt="" /><div className="service-banner-cover" /><h1>Service &amp; Support</h1><p>Uncompromising Standards.<br />Rigorous Validation. Premium Performance.</p></section>
       <section className="service-offers" id="what-we-offer">
         <Heading label="01 / What We Offer" title="Premium In All Parts" />
-        <div className="service-offer-grid">{offers.map(([title, description], i) => <article key={title}><div className="service-number"><img src={asset("circle.svg")} alt="" /><span>{String(i + 1).padStart(2, "0")}</span></div><img className="service-connector" src={asset("connector.svg")} alt="" /><div><h3>{title}</h3><p>{description}</p></div></article>)}</div>
+        <div className="service-offer-grid">{offers.map(([title, description], i) => <article key={title}><div className="service-number"><img loading="lazy" decoding="async" src={asset("circle.svg")} alt="" /><span>{String(i + 1).padStart(2, "0")}</span></div><img loading="lazy" decoding="async" className="service-connector" src={asset("connector.svg")} alt="" /><div><h3>{title}</h3><p>{description}</p></div></article>)}</div>
       </section>
       <section className="service-quality" id="quality-management">
         <Heading label="02 / Quality Management System" title="Commitment Embedded In Every Stage" />
-        <div className="service-standard-grid">{standards.map(([icon, title, description]) => <article key={title}><div className="service-icon"><img src={asset(icon)} alt="" /></div><h3>{title}</h3><p>{description}</p></article>)}</div>
-        <img className="service-car" src={asset("car.png")} alt="Vehicle engineering and quality inspection" />
+        <div className="service-standard-grid">{standards.map(([icon, title, description]) => <article key={title}><div className="service-icon"><img loading="lazy" decoding="async" src={asset(icon)} alt="" /></div><h3>{title}</h3><p>{description}</p></article>)}</div>
+        <img loading="lazy" decoding="async" className="service-car" src={asset("car.webp")} alt="Vehicle engineering and quality inspection" />
       </section>
       <section className="service-process" id="process-controls">
-        <img className="service-process-art" src={asset("process.png")} alt="Isometric manufacturing and inspection process" />
-        <div className="service-process-panel"><h2>Process Controls</h2><ul>{processes.map(text => <li key={text}><img src={asset("tick.svg")} alt="" /><span>{text}</span></li>)}</ul></div>
+        <img loading="lazy" decoding="async" className="service-process-art" src={asset("process.webp")} alt="Isometric manufacturing and inspection process" />
+        <div className="service-process-panel"><h2>Process Controls</h2><ul>{processes.map(text => <li key={text}><img loading="lazy" decoding="async" src={asset("tick.svg")} alt="" /><span>{text}</span></li>)}</ul></div>
       </section>
       <section className="service-improvement" id="continuous-improvement">
         <Heading label="03 / Continuous Improvement" title="Driven By Excellence" />
         <div className="service-improvement-copy"><p>At AIPA, quality is not a specification—it's a commitment embedded in every stage of our process.</p><p>From design engineering through manufacturing to final validation, we maintain strict protocols that ensure every component delivers OE-level performance, precision fitment, and long-term reliability.</p></div>
-        <div className="service-improvement-cards">{improvements.map((text, i) => <article key={text} className={`service-improve-${i}`}><img src={asset(`improve${i}.svg`)} alt="" /><p>{text}</p></article>)}</div>
+        <div className="service-improvement-cards">{improvements.map((text, i) => <article key={text} className={`service-improve-${i}`}><img loading="lazy" decoding="async" src={asset(`improve${i}.svg`)} alt="" /><p>{text}</p></article>)}</div>
       </section>
       <section className="service-catalogues" id="catalogues">
-        <img className="service-catalogues-image" src={asset("catalogues-support.png")} alt="Automotive technician providing diagnostic and workshop support" />
+        <img loading="lazy" decoding="async" className="service-catalogues-image" src={asset("catalogues-support.webp")} alt="Automotive technician providing diagnostic and workshop support" />
         <div className="service-catalogues-shade" />
         <div className="service-catalogues-panel">
           <p>04 / Digital Parts Access</p>

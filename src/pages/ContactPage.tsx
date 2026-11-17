@@ -5,9 +5,9 @@ import { FooterSection } from "@/components/MobileLayout";
 import { useViewport } from "@/hooks/useViewport";
 import useContactAnimations from "@/components/useContactAnimations";
 import "@/components/contact.css";
-const assets = import.meta.glob("../assets/contact/*", { eager: true, query: "?url", import: "default" }) as Record<string,string>;
+const assets = import.meta.glob(["../assets/contact/*","!../assets/contact/imgAboutBannerPic-web.png","!../assets/contact/imgAboutBannerPic1.png","!../assets/contact/imgQrCode.png"], { eager: true, query: "?url", import: "default" }) as Record<string,string>;
 const asset = (name: string) => assets[`../assets/contact/${name}`];
-function Tip({children}:{children:React.ReactNode}) {return <p className="contact-tip"><img src={asset("imgInfoIcon.svg")} alt="" />{children}</p>;}
+function Tip({children}:{children:React.ReactNode}) {return <p className="contact-tip"><img loading="lazy" decoding="async" src={asset("imgInfoIcon.svg")} alt="" />{children}</p>;}
 export default function ContactPage() {
   const viewport = useViewport();
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ export default function ContactPage() {
   useContactAnimations(root);
   const [draft, setDraft] = useState("");
   return <main ref={root} className="contact-page" data-node-id="96:6938">
-    <section className="contact-banner"><img className="contact-banner-base" src={asset("imgAboutBannerPic-web.png")} alt="" /><img className="contact-banner-art" src={asset("imgAboutBannerPic1.png")} alt="" /><div className="contact-banner-cover" /><h1>Contact Us</h1><p>Get in Touch with Our Team</p></section>
+    <section className="contact-banner"><img loading="lazy" decoding="async" className="contact-banner-base" src={asset("imgAboutBannerPic-web.webp")} alt="" /><img loading="lazy" decoding="async" className="contact-banner-art" src={asset("imgAboutBannerPic1.webp")} alt="" /><div className="contact-banner-cover" /><h1>Contact Us</h1><p>Get in Touch with Our Team</p></section>
     <section className="contact-content">
       <form className="contact-form" onChange={()=>setDraft("")} onSubmit={event=>{
         event.preventDefault();
@@ -34,10 +34,10 @@ export default function ContactPage() {
         {draft && <div role="status" className="contact-draft"><p>Your enquiry is ready. Open your email app and send the draft to complete your enquiry.</p><a href={draft}>OPEN EMAIL DRAFT</a></div>}
       </form>
       <div className="contact-info"><h2>Feel Free To Ask Us</h2><div className="contact-intro"><p>Whether you need</p><p><strong>Technical support, Product information</strong> or</p><p><strong>Partnership opportunities,</strong></p><p>our team is ready to assist you.</p></div>
-        <img className="contact-divider" src={asset("imgDividerHorizontal.svg")} alt="" />
-        <div className="contact-details"><a href="mailto:info@ai-parts.eu"><img src={asset("imgIcon.svg")} alt="" />info@ai-parts.eu</a><address><img src={asset("imgIcon1.svg")} alt="" /><div>AIPA Automotive GMBH<br />Lindenweg 24<br />76706<br />Dettenheim</div></address></div>
-        <img className="contact-divider" src={asset("imgDividerHorizontal1.svg")} alt="" />
-        <div className="contact-social"><div className="contact-qr"><img src={asset("imgQrCode.png")} alt="WhatsApp contact QR code" /></div><div className="contact-social-icons">{[["X","imgGroup.svg","https://x.com"],["Facebook","imgFoundationSocialFacebook.svg","https://www.facebook.com"],["YouTube","imgTypcnSocialYoutube.svg","https://www.youtube.com"],["Instagram","imgTypcnSocialInstagram.svg","https://www.instagram.com"]].map(([name,icon,url])=><a key={name} href={url} target="_blank" rel="noopener noreferrer" aria-label={name}><img src={asset(icon)} alt="" /></a>)}</div></div>
+        <img loading="lazy" decoding="async" className="contact-divider" src={asset("imgDividerHorizontal.svg")} alt="" />
+        <div className="contact-details"><a href="mailto:info@ai-parts.eu"><img loading="lazy" decoding="async" src={asset("imgIcon.svg")} alt="" />info@ai-parts.eu</a><address><img loading="lazy" decoding="async" src={asset("imgIcon1.svg")} alt="" /><div>AIPA Automotive GMBH<br />Lindenweg 24<br />76706<br />Dettenheim</div></address></div>
+        <img loading="lazy" decoding="async" className="contact-divider" src={asset("imgDividerHorizontal1.svg")} alt="" />
+        <div className="contact-social"><div className="contact-qr"><img loading="lazy" decoding="async" src={asset("imgQrCode.webp")} alt="WhatsApp contact QR code" /></div><div className="contact-social-icons">{[["X","imgGroup.svg","https://x.com"],["Facebook","imgFoundationSocialFacebook.svg","https://www.facebook.com"],["YouTube","imgTypcnSocialYoutube.svg","https://www.youtube.com"],["Instagram","imgTypcnSocialInstagram.svg","https://www.instagram.com"]].map(([name,icon,url])=><a key={name} href={url} target="_blank" rel="noopener noreferrer" aria-label={name}><img loading="lazy" decoding="async" src={asset(icon)} alt="" /></a>)}</div></div>
       </div>
     </section>
     {viewport < 1024 ? <FooterSection /> : <div className="contact-footer" onClick={event=>{

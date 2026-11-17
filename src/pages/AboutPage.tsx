@@ -6,11 +6,11 @@ import "@/components/about/about-interactions.css";
 import "@/components/about/about-responsive.css";
 import { useNavigate } from "react-router";
 import { Footer } from "@/imports/1Home/index";
-import imgAboutBannerPic from "@/assets/about/imgAboutBannerPic.png";
-import imgAboutUsPic01 from "@/assets/about/imgAboutUsPic01-web.jpg";
-import imgAboutUsPic02 from "@/assets/about/imgAboutUsPic02.png";
-import imgBg from "@/assets/about/imgBg.png";
-import imgBg1 from "@/assets/about/imgBg1.png";
+import imgAboutBannerPic from "@/assets/about/imgAboutBannerPic.webp";
+import imgAboutUsPic01 from "@/assets/about/imgAboutUsPic01-web.webp";
+import imgAboutUsPic02 from "@/assets/about/imgAboutUsPic02.webp";
+import imgBg from "@/assets/about/imgBg.webp";
+import imgBg1 from "@/assets/about/imgBg1.webp";
 import imgIcon01 from "@/assets/about/imgIcon01.svg";
 import imgIcon02 from "@/assets/about/imgIcon02.svg";
 import imgIcon03 from "@/assets/about/imgIcon03.svg";
@@ -61,7 +61,7 @@ export default function AboutPage() {
     <div ref={root} className="bg-white relative w-[1440px]" style={{ height: 3536, marginTop: -129, overflowX: "clip" }} data-node-id="93:1973" data-name="3-ABOUT US" onClick={handleFooterClick}>
       <div className="absolute contents left-0 top-0" data-node-id="238:2508" data-name="banner-aboutUs">
         <div className="absolute h-[500px] left-0 top-0 w-[1440px]" data-node-id="95:3499" data-name="about-banner-pic">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAboutBannerPic} />
+          <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAboutBannerPic} />
         </div>
         <div className="absolute h-[500px] left-0 opacity-70 top-0 w-[1440px]" data-node-id="95:3500" style={{ backgroundImage: "linear-gradient(130.27020577352522deg, rgb(15, 36, 115) 0%, rgb(16, 252, 242) 100%)" }} data-name="home-banner-cover" />
         <div className="[word-break:break-word] absolute contents font-['Inter:Bold',sans-serif] font-bold left-[450px] not-italic text-[color:var(--white,white)] text-center top-[229px]" data-node-id="95:3501" data-name="banner-title">
@@ -89,12 +89,12 @@ export default function AboutPage() {
         </div>
         <div className="absolute h-[144px] left-[248px] shadow-[4px_4px_8px_2px_rgba(0,0,0,0.25)] top-[836px] w-[532px]" data-node-id="95:2108" data-name="about-us-pic-01">
           <div aria-hidden className="absolute inset-0 pointer-events-none">
-            <img alt="" className="absolute max-w-none object-cover size-full" src={imgAboutUsPic01} />
+            <img loading="lazy" decoding="async" alt="" className="absolute max-w-none object-cover size-full" src={imgAboutUsPic01} />
             <div className="absolute bg-gradient-to-r from-[rgba(16,252,242,0.3)] inset-0 to-[rgba(15,36,115,0.3)]" />
           </div>
         </div>
         <div className="absolute left-[808px] shadow-[4px_4px_8px_2px_rgba(0,0,0,0.25)] size-[383px] top-[597px]" data-node-id="95:2109" data-name="about-us-pic-02">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAboutUsPic02} />
+          <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAboutUsPic02} />
         </div>
       </div>
       <div className="absolute contents left-[242px] top-[1141px]" data-node-id="238:2510" data-name="aboutUs-section2">
@@ -108,7 +108,7 @@ export default function AboutPage() {
             Customer-Centric
           </p>
           <div className="absolute left-[411px] size-[38.82px] top-[1241px]" data-node-id="95:2126" data-name="icon-01">
-            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon01} />
+            <img loading="lazy" decoding="async" alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon01} />
           </div>
           <div className="[word-break:break-word] absolute content-stretch flex flex-col font-['Inter:Regular',sans-serif] font-normal gap-[12px] items-start leading-[0] left-[257px] not-italic text-[12px] text-[color:var(--text,#6c6c6c)] top-[1416px] w-[193px]" data-node-id="114:590" data-name="card-text">
             <ul className="block relative shrink-0 w-full" data-node-id="95:2129">
@@ -134,7 +134,7 @@ export default function AboutPage() {
             Partnership Excellence
           </p>
           <div className="absolute left-[654px] size-[38.82px] top-[1241px]" data-node-id="95:2134" data-name="icon-02">
-            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon02} />
+            <img loading="lazy" decoding="async" alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon02} />
           </div>
           <div className="[word-break:break-word] absolute content-stretch flex flex-col font-['Inter:Regular',sans-serif] font-normal gap-[12px] items-start leading-[0] left-[497px] not-italic text-[12px] text-[color:var(--white,white)] top-[1416px] w-[193px]" data-node-id="114:591" data-name="card-text">
             <ul className="block relative shrink-0 w-full" data-node-id="114:592">
@@ -160,7 +160,7 @@ export default function AboutPage() {
             Culture of Quality
           </p>
           <div className="absolute left-[894px] size-[38.82px] top-[1241px]" data-node-id="95:2140" data-name="icon-03">
-            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon03} />
+            <img loading="lazy" decoding="async" alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon03} />
           </div>
           <div className="[word-break:break-word] absolute content-stretch flex flex-col font-['Inter:Regular',sans-serif] font-normal gap-[12px] items-start leading-[0] left-[737px] not-italic text-[12px] text-[color:var(--text,#6c6c6c)] top-[1416px] w-[193px]" data-node-id="114:596" data-name="card-text">
             <ul className="block relative shrink-0 w-full" data-node-id="114:597">
@@ -186,7 +186,7 @@ export default function AboutPage() {
             Technical Leadership
           </p>
           <div className="absolute left-[1134px] size-[38.82px] top-[1241px]" data-node-id="95:2147" data-name="icon-04">
-            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon04} />
+            <img loading="lazy" decoding="async" alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon04} />
           </div>
           <div className="[word-break:break-word] absolute content-stretch flex flex-col font-['Inter:Regular',sans-serif] font-normal gap-[12px] items-start leading-[0] left-[977px] not-italic text-[12px] text-[color:var(--white,white)] top-[1416px] w-[193px]" data-node-id="114:601" data-name="card-text">
             <ul className="block relative shrink-0 w-full" data-node-id="114:602">
@@ -211,7 +211,7 @@ export default function AboutPage() {
         <div className="-translate-x-1/2 absolute h-[388px] left-1/2 top-[1789px] w-[1440px]" data-node-id="95:3184" data-name="BG">
           <div aria-hidden className="absolute inset-0 pointer-events-none">
             <div className="absolute inset-0 overflow-hidden">
-              <img alt="" className="absolute h-[105.15%] left-0 max-w-none top-[-2.58%] w-[104.8%]" src={imgBg} />
+              <img loading="lazy" decoding="async" alt="" className="absolute h-[105.15%] left-0 max-w-none top-[-2.58%] w-[104.8%]" src={imgBg} />
             </div>
             <div className="absolute bg-gradient-to-r from-[rgba(16,252,242,0.2)] inset-0 to-[rgba(15,36,115,0.2)]" />
           </div>
@@ -232,7 +232,7 @@ export default function AboutPage() {
       <div className="absolute contents left-[-129px] top-[2225px]" data-node-id="238:2516" data-name="aboutUs-section4">
         <div className="absolute h-[655px] left-[-129px] top-[2225px] w-[1456px]" data-node-id="95:3541" data-name="BG">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute h-[124.58%] left-0 max-w-none top-[-20.61%] w-full" src={imgBg1} />
+            <img loading="lazy" decoding="async" alt="" className="absolute h-[124.58%] left-0 max-w-none top-[-20.61%] w-full" src={imgBg1} />
           </div>
         </div>
         <div className="absolute contents left-[753px] top-[2257px]" data-node-id="238:2515" data-name="text-tile">
@@ -241,7 +241,7 @@ export default function AboutPage() {
             <div className="absolute flex h-[105px] items-center justify-center left-[799px] top-[2596px] w-[10px]" data-node-id="95:3535">
               <div className="flex-none rotate-90">
                 <div className="h-[10px] relative w-[105px]" data-name="divider-vertical">
-                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDividerVertical} />
+                  <img loading="lazy" decoding="async" alt="" className="absolute block inset-0 max-w-none size-full" src={imgDividerVertical} />
                 </div>
               </div>
             </div>
@@ -259,7 +259,7 @@ export default function AboutPage() {
             <div className="absolute flex h-[105px] items-center justify-center left-[799px] top-[2411px] w-[10px]" data-node-id="95:3532">
               <div className="flex-none rotate-90">
                 <div className="h-[10px] relative w-[105px]" data-name="divider-vertical">
-                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDividerVertical} />
+                  <img loading="lazy" decoding="async" alt="" className="absolute block inset-0 max-w-none size-full" src={imgDividerVertical} />
                 </div>
               </div>
             </div>

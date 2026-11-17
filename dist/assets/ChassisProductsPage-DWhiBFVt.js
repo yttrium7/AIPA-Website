@@ -1,0 +1,1 @@
+import{r as e}from"./useViewport-C411ntCl.js";import{ProductCategoryPage as t,r as n}from"./SensorProductsPage-kT1JWB0F.js";var r=e();function i(){return(0,r.jsx)(t,{category:n,slug:`chassis`})}export{i as default};

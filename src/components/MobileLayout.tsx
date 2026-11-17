@@ -3,26 +3,26 @@ import MobileNav from "./MobileNav";
 import HomeCampaignSlide, { HomeSuppliedBannerSlide } from "./HomeCampaignSlide";
 import "./home-campaign.css";
 import CarBrandGrid from "./CarBrandGrid";
-import imgHomeBanner1 from "@/imports/1Home/abecc2d8edb47629e06299f0921d83d65bcf80df.png";
-import imgSectionPic from "@/imports/1Home/16029ab3e501fe0fc0f0098bb4aeb35d46dc4f9e.png";
-import imgSectionPic1 from "@/imports/1Home/767937fd687ef41580ee1088bac6fecb29cb9c24.png";
-import imgCardPic from "@/imports/1Home/782c8092b45a955bc824aada4794e3f1220d184e.png";
-import imgCardPic1 from "@/imports/1Home/b332fd1363383966ca0ffb94fd5cc1d3012afd70.png";
-import imgCardPic2 from "@/imports/1Home/7816dd59f9927d5b774c3da06af10bec297beb8e.png";
-import imgRectangle97 from "@/imports/1Home/4b0017ac28cd0024ccef83c058a74fe526aa8393.png";
-import imgRectangle98 from "@/imports/1Home/212ead606655187cecea3a2cf373be162fde873e.png";
-import imgRectangle99 from "@/imports/1Home/30922abcad1b477d90966300592fd8bb57a59f08.png";
-import imgRectangle100 from "@/imports/1Home/05ed871b5e2f64321b66a52c8677f16277278c37.png";
-import imgPicSensor from "@/imports/1Home/ad8494cf76cd5c891a24e2e56320a8201740fb81.png";
-import imgPicBrakes from "@/imports/1Home/761918e9042eb4dea7308c86b7d77daa3ec7ebbb.png";
-import imgPicCooling from "@/imports/1Home/5a2cd4e36e177d548300969ca95b85cff7010865.png";
-import imgPicIgnition from "@/imports/1Home/293e63dc2d1a405d9d91136735d265475ad0452d.png";
-import imgPicElectrics from "@/imports/1Home/d7d7a9e33860ea9922f468299546365385e49781.png";
-import imgPicAcSystem from "@/imports/1Home/dbac8ef06c7918e369dee98996107915e192aa6d.png";
-import imgPicExhaust from "@/imports/1Home/ff64ce05504b032bc98be805cdac18383d6f5833.png";
-import imgPicChasis from "@/imports/1Home/73ab2043fdb198e1d5b96c6bb592cb345236a971.png";
-import imgPicEngine from "@/imports/1Home/583dc5cdacb1f11b3c99dcf915b21eeb08ee1ed6.png";
-import imgFooterPic from "@/imports/1Home/70e04261d650597c50a1fa5ef9a4105343f2538c.png";
+import imgHomeBanner1 from "@/imports/1Home/abecc2d8edb47629e06299f0921d83d65bcf80df.webp";
+import imgSectionPic from "@/imports/1Home/16029ab3e501fe0fc0f0098bb4aeb35d46dc4f9e.webp";
+import imgSectionPic1 from "@/imports/1Home/767937fd687ef41580ee1088bac6fecb29cb9c24.webp";
+import imgCardPic from "@/imports/1Home/782c8092b45a955bc824aada4794e3f1220d184e.webp";
+import imgCardPic1 from "@/imports/1Home/b332fd1363383966ca0ffb94fd5cc1d3012afd70.webp";
+import imgCardPic2 from "@/imports/1Home/7816dd59f9927d5b774c3da06af10bec297beb8e.webp";
+import imgRectangle97 from "@/imports/1Home/4b0017ac28cd0024ccef83c058a74fe526aa8393.webp";
+import imgRectangle98 from "@/imports/1Home/212ead606655187cecea3a2cf373be162fde873e.webp";
+import imgRectangle99 from "@/imports/1Home/30922abcad1b477d90966300592fd8bb57a59f08.webp";
+import imgRectangle100 from "@/imports/1Home/05ed871b5e2f64321b66a52c8677f16277278c37.webp";
+import imgPicSensor from "@/imports/1Home/ad8494cf76cd5c891a24e2e56320a8201740fb81.webp";
+import imgPicBrakes from "@/imports/1Home/761918e9042eb4dea7308c86b7d77daa3ec7ebbb.webp";
+import imgPicCooling from "@/imports/1Home/5a2cd4e36e177d548300969ca95b85cff7010865.webp";
+import imgPicIgnition from "@/imports/1Home/293e63dc2d1a405d9d91136735d265475ad0452d.webp";
+import imgPicElectrics from "@/imports/1Home/d7d7a9e33860ea9922f468299546365385e49781.webp";
+import imgPicAcSystem from "@/imports/1Home/dbac8ef06c7918e369dee98996107915e192aa6d.webp";
+import imgPicExhaust from "@/imports/1Home/ff64ce05504b032bc98be805cdac18383d6f5833.webp";
+import imgPicChasis from "@/imports/1Home/73ab2043fdb198e1d5b96c6bb592cb345236a971.webp";
+import imgPicEngine from "@/imports/1Home/583dc5cdacb1f11b3c99dcf915b21eeb08ee1ed6.webp";
+import imgFooterPic from "@/imports/1Home/70e04261d650597c50a1fa5ef9a4105343f2538c.webp";
 import svgPaths from "@/imports/1Home/svg-vdx3ul2yyf";
 
 // ─── Brand tokens ─────────────────────────────────────────────────────────────
@@ -102,7 +102,7 @@ function HeroSection() {
                                  overflow: "hidden" }}>
       {/* Background image */}
       <div style={{ position: "absolute", inset: 0, overflow: "hidden" }}>
-        <img src={imgHomeBanner1} alt=""
+        <img loading="eager" fetchPriority="high" src={imgHomeBanner1} alt=""
              style={{ position: "absolute", inset: 0, width: "100%", height: "100%",
                       objectFit: "cover", objectPosition: "center top" }} />
         {/* Gradient overlay */}
@@ -201,7 +201,7 @@ function WhoWeAreSection() {
     <section id="who-we-are" style={{ background: "white", paddingBottom: "56px" }}>
       {/* Image */}
       <div style={{ width: "100%", aspectRatio: "4/3", overflow: "hidden" }}>
-        <img src={imgSectionPic1} alt="Who We Are"
+        <img loading="lazy" decoding="async" src={imgSectionPic1} alt="Who We Are"
              style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </div>
       {/* Text */}
@@ -256,7 +256,7 @@ function VehiclesSection() {
       {/* Section image */}
       <div style={{ borderRadius: "12px", overflow: "hidden", marginBottom: "32px",
                     aspectRatio: "16/9" }}>
-        <img src={imgSectionPic} alt="Vehicles we serve"
+        <img loading="lazy" decoding="async" src={imgSectionPic} alt="Vehicles we serve"
              style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </div>
       <SectionLabel num="02" text="Vehicles We Serve" />
@@ -317,7 +317,7 @@ function WhatWeOfferSection() {
             cursor: "pointer",
           }}>
             <div style={{ height: "180px", overflow: "hidden" }}>
-              <img src={img} alt={title}
+              <img loading="lazy" decoding="async" src={img} alt={title}
                    style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
             <div style={{ padding: "20px" }}>
@@ -358,7 +358,7 @@ function AppScenarioSection() {
             borderRadius: "16px", overflow: "hidden", position: "relative",
             aspectRatio: "3/4",
           }}>
-            <img src={img} alt={title}
+            <img loading="lazy" decoding="async" src={img} alt={title}
                  style={{ position: "absolute", inset: 0, width: "100%", height: "100%",
                           objectFit: "cover" }} />
             <div style={{
@@ -425,7 +425,7 @@ function ProductCard({ img, name, href }: { img: string; name: string; href: str
         cursor: "pointer",
       }}
     >
-      <img src={img} alt={name}
+      <img loading="lazy" decoding="async" src={img} alt={name}
            style={{ position: "absolute", inset: 0, width: "100%", height: "100%",
                     objectFit: "cover", mixBlendMode: "multiply",
                     opacity: hovered ? 0.75 : 0.55,
@@ -515,7 +515,7 @@ export function FooterSection() {
     }}>
       {/* Decorative overlay */}
       <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
-        <img src={imgFooterPic} alt=""
+        <img loading="lazy" decoding="async" src={imgFooterPic} alt=""
              style={{ position: "absolute", inset: 0, width: "100%", height: "100%",
                       objectFit: "cover", objectPosition: "center bottom",
                       opacity: 0.15, mixBlendMode: "multiply" }} />

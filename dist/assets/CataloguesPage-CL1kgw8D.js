@@ -1,0 +1,1 @@
+import{r as e}from"./useViewport-C411ntCl.js";import{t}from"./_PlaceholderPage-c5Pt09jf.js";var n=e();function r(){return(0,n.jsx)(t,{title:`Catalogues`,subtitle:`Application scenario data and TecDoc-compatible part catalogues for accurate vehicle fitment.`})}export{r as default};
