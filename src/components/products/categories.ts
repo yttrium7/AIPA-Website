@@ -45,7 +45,7 @@ export const electricsCategory = {
 export const ignitionCategory = {
   name: 'Ignition',
   description: 'Engineered ignition components deliver consistent spark energy, precise timing, and reliable cold starts. Designed for thermal stability and secure electrical connection, the range supports efficient combustion and dependable performance.',
-  spriteImage: 'ignition' + "-products-v1.png",
+  spriteImage: "ignition-products-v1.webp",
   items: [
     { name: 'Ignition Coil', sprite: [0,0], x: 0, y: 0, width: 200, corner: 'tr' },
     { name: 'Spark Plug', sprite: [1,0], x: 232, y: 0, width: 200, corner: 'br' },
@@ -62,7 +62,7 @@ export const ignitionCategory = {
 export const coolingCategory = {
   name: 'Cooling',
   description: 'Efficient thermal management protects the engine under every operating condition. Our cooling components support stable temperatures, controlled coolant flow, corrosion resistance, and dependable sealing throughout the vehicle lifecycle.',
-  spriteImage: 'cooling' + "-products-v1.png",
+  spriteImage: "cooling-products-v1.webp",
   items: [
     { name: 'Engine Radiator', sprite: [0,0], x: 0, y: 0, width: 200, corner: 'tr' },
     { name: 'Electric Water Pump', sprite: [1,0], x: 232, y: 0, width: 200, corner: 'br' },
@@ -79,7 +79,7 @@ export const coolingCategory = {
 export const ac_systemCategory = {
   name: 'AC System',
   description: 'Precision climate components help maintain clean airflow and consistent cabin temperature. Each part is designed for efficient heat exchange, reliable refrigerant control, quiet operation, and accurate OE-style fitment.',
-  spriteImage: 'ac-system' + "-products-v1.png",
+  spriteImage: "ac-system-products-v1.webp",
   items: [
     { name: 'AC Compressor', sprite: [0,0], x: 0, y: 0, width: 200, corner: 'tr' },
     { name: 'AC Condenser', sprite: [1,0], x: 232, y: 0, width: 200, corner: 'br' },
@@ -96,7 +96,7 @@ export const ac_systemCategory = {
 export const chassisCategory = {
   name: 'Chassis',
   description: 'Chassis components translate steering input into stable, controlled movement. Our range focuses on accurate geometry, secure articulation, vibration isolation, and long service life across demanding road conditions.',
-  spriteImage: 'chassis' + "-products-v1.png",
+  spriteImage: "chassis-products-v1.webp",
   items: [
     { name: 'Control Arm', sprite: [0,0], x: 0, y: 0, width: 200, corner: 'tr' },
     { name: 'Ball Joint', sprite: [1,0], x: 232, y: 0, width: 200, corner: 'br' },
@@ -113,7 +113,7 @@ export const chassisCategory = {
 export const exhaustCategory = {
   name: 'Exhaust',
   description: 'Durable exhaust components manage gas flow, emissions, sound, and heat. Materials and joining surfaces are selected for corrosion resistance, reliable sealing, low back pressure, and consistent operation at high temperatures.',
-  spriteImage: 'exhaust' + "-products-v1.png",
+  spriteImage: "exhaust-products-v1.webp",
   items: [
     { name: 'Catalytic Converter', sprite: [0,0], x: 0, y: 0, width: 200, corner: 'tr' },
     { name: 'Exhaust Manifold', sprite: [1,0], x: 232, y: 0, width: 200, corner: 'br' },
@@ -130,7 +130,7 @@ export const exhaustCategory = {
 export const engineCategory = {
   name: 'Engine',
   description: 'Core engine components are built for precise movement, effective sealing, and controlled lubrication. Dimensional accuracy and material durability support efficient power delivery under repeated thermal and mechanical loads.',
-  spriteImage: 'engine' + "-products-v1.png",
+  spriteImage: "engine-products-v1.webp",
   items: [
     { name: 'Piston & Connecting Rod', sprite: [0,0], x: 0, y: 0, width: 200, corner: 'tr' },
     { name: 'Timing Chain Kit', sprite: [1,0], x: 232, y: 0, width: 200, corner: 'br' },
@@ -147,7 +147,7 @@ export const engineCategory = {
 export const brakesCategory = {
   name: 'Brakes',
   description: 'Brake components are engineered for predictable response, stable friction, and reliable hydraulic pressure. The range supports confident stopping performance, low vibration, and durability in daily and demanding driving conditions.',
-  spriteImage: 'brakes' + "-products-v1.png",
+  spriteImage: "brakes-products-v1.webp",
   items: [
     { name: 'Brake Disc Rotor', sprite: [0,0], x: 0, y: 0, width: 200, corner: 'tr' },
     { name: 'Brake Pad Set', sprite: [1,0], x: 232, y: 0, width: 200, corner: 'br' },

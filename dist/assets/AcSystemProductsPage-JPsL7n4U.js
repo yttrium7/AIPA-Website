@@ -1,1 +1,0 @@
-import{r as e}from"./useViewport-C411ntCl.js";import{ProductCategoryPage as t,t as n}from"./SensorProductsPage-kT1JWB0F.js";var r=e();function i(){return(0,r.jsx)(t,{category:n,slug:`ac-system`})}export{i as default};

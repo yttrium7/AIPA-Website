@@ -1,0 +1,1 @@
+import{r as e}from"./useViewport-C411ntCl.js";import{ProductCategoryPage as t,o as n}from"./SensorProductsPage-CTxW_25Z.js";var r=e();function i(){return(0,r.jsx)(t,{category:n,slug:`engine`})}export{i as default};
